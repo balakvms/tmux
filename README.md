@@ -15,7 +15,7 @@
 set -g mouse on
 ```
 
-2. ***Reconfigure prefix Ctrl-B to Ctrl-A, for each access***
+2. ***Reconfigure prefix Ctrl-B to Ctrl-X, for each access***
 
 ```
 set-option -g prefix C-x
