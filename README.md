@@ -18,10 +18,13 @@ set -g mouse on
 2. ***Reconfigure prefix Ctrl-B to Ctrl-X, for each access***
 
 ```
+unbind-key C-x
 set-option -g prefix C-x
-unbind-key C-a
-bind-key C-a send-prefix
+bind-key C-x send-prefix
 ```
+unbind - unbinds whatever functionality C-x had (if any).
+set -g prefix line informs tmux that the prefix will now be C-x.
+bind ... send-prefix allows Ctrl + x to perform the send-prefix command. The send-prefix command sends the prefix keystroke to a window. This is useful with nested tmux session
 
 3. ***Set easier window split keys***
 
