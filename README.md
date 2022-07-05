@@ -22,9 +22,12 @@ unbind-key C-x
 set-option -g prefix C-x
 bind-key C-x send-prefix
 ```
-unbind - unbinds whatever functionality C-x had (if any).
-set -g prefix line informs tmux that the prefix will now be C-x.
-bind ... send-prefix allows Ctrl + x to perform the send-prefix command. The send-prefix command sends the prefix keystroke to a window. This is useful with nested tmux session
+```
+unbind                  --- unbinds whatever functionality C-x had (if any).
+set -g prefix           --- line informs tmux that the prefix will now be C-x.
+bind-key . send-prefix  --- allows Ctrl + x to perform the send-prefix command. The send-prefix command sends the prefix keystroke to a window.
+```
+
 
 3. ***Set easier window split keys***
 
